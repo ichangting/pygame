@@ -30,6 +30,10 @@ textRectObj = textSurfaceObj.get_rect()
 
 textRectObj.center = (100, 50)
 
+for i in range(0,10)：
+    snowx = random.randint(0,700)
+    snowy = random.randint(0,460)
+    DISPLAYSURF.blit(snowImg,(snowx,snowy))
 
 # font= pygame.font.Font('simsum.ttc',40) # simsun 
 
@@ -37,15 +41,6 @@ textRectObj.center = (100, 50)
 # text=font.render('*',True,(255,0,0)) # ''内为文本内容，True 表示开启抗锯齿，字体平滑，（255,0,0）为颜色。
 
 while True: # main game loop
-
-#    
-#    
-    for i in range(0,10)
-        snowx = random.randint(0,700)
-        snowy = random.randint(0,460)
-    DISPLAYSURF.blit(snowImg,(snowx,snowy))
-
-
     
     DISPLAYSURF.blit(textSurfaceObj,textRectObj)    
     for event in pygame.event.get():
